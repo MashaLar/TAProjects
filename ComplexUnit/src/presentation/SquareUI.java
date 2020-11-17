@@ -1,6 +1,6 @@
 package presentation;
 
-import models.equation.Square;
+import util.equation.Square;
 import java.util.Scanner;
 
 public class SquareUI {
@@ -8,8 +8,8 @@ public class SquareUI {
 
     private Scanner in = new Scanner(System.in);
 
-    //constructor for finding solutions of square equation
-    public SquareUI(){
+    //menu for finding solutions of square equation
+    public void Menu(){
         System.out.println("\n-Input coefficients a,b,c for a*x^2 + b*x + c = 0");
         double a =0, b=0, c=0;
         do {

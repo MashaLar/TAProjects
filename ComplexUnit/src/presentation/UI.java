@@ -18,13 +18,13 @@ public class UI {
             int i = Integer.parseInt(in.nextLine());
             switch (i) {
                 case 1:
-                    new FiveNumSysUI();
+                    new FiveNumSysUI().Menu();
                     return true;
                 case 2:
-                    new ComplexUI();
+                    new ComplexUI().Menu();
                     return true;
                 case 3:
-                    new SquareUI();
+                    new SquareUI().Menu();
                     return true;
                 case 4:
                     System.out.println("----Good luck!----");

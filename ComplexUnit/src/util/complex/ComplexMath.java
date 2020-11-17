@@ -1,4 +1,6 @@
-package models.complex;
+package util.complex;
+
+import models.ComplexNumber;
 
 public class ComplexMath {
     //class for operations on complex numbers (+,-,/,*)

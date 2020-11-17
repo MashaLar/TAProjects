@@ -1,6 +1,8 @@
 package presentation;
 
-import models.complex.*;
+import models.ComplexNumber;
+import util.complex.ComplexMath;
+
 import java.util.Scanner;
 
 public class ComplexUI {
@@ -17,11 +19,11 @@ public class ComplexUI {
                     "\n Your number:");
             mainComplex = new ComplexNumber(in.nextLine());
         }while(mainComplex.getImagine()==0 && mainComplex.getReal()==0);
-        ComplexUIMenu(); //running menu for complex number
+        //ComplexUIMenu(); //running menu for complex number
     }
 
     //menu
-    private void ComplexUIMenu() {
+    public void Menu() {
         boolean menuContinue = true;  // Variable for cycle to repeat menu
         do {
             System.out.println("\n----Complex Numbers Menu-----" +
@@ -227,7 +229,7 @@ public class ComplexUI {
                 }
                 else if(s.matches("(-?[1-9]+(\\.\\d)?i?[-+]?)+|(-?\\d+(\\.\\d*[1-9]+)+i?[-+]?)+")){
                     //if it is a complex number, multiply new complex number to main
-                    mainComplex = ComplexMath.Multiply(mainComplex, new ComplexNumber(s));
+                    mainComplex = ComplexMath.Multiply(mainComplex, new  ComplexNumber(s));
                     System.out.println("\nComplex number changed! "+ mainComplex.toString());
                     break;
                 }

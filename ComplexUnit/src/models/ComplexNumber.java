@@ -1,4 +1,4 @@
-package models.complex;
+package models;
 
 import java.util.Objects;
 
@@ -12,8 +12,7 @@ public class ComplexNumber {
     public ComplexNumber(double a, double b) {
         if ((a == 0 && b == 0)) {
             System.out.println("All params can`t equal 0!");
-        }
-        else {
+        } else {
             this.real = a;
             this.imagine = b;
         }
@@ -41,19 +40,24 @@ public class ComplexNumber {
             } else {
                 System.out.println("---Wrong expression!---");
             }
-        }catch (Exception e){System.out.println("---Wrong expression!---");}
+        } catch (Exception e) {
+            System.out.println("---Wrong expression!---");
+        }
     }
 
     // Getters and Setters for class` variables
     public double getReal() {
         return real;
     }
+
     public void setReal(double a) {
         this.real = a;
     }
+
     public double getImagine() {
         return imagine;
     }
+
     public void setImagine(double b) {
         this.imagine = b;
     }
@@ -67,24 +71,25 @@ public class ComplexNumber {
         return Double.compare(that.real, real) == 0 &&
                 Double.compare(that.imagine, imagine) == 0;
     }
+
     @Override
     public int hashCode() {
         return Objects.hash(real, imagine);
     }
+
     @Override
     public String toString() {
         if (imagine < 0) {
             return "z = " +
                     real +
-                    " "+imagine +
+                    " " + imagine +
                     "i";
-        }
-        else {
+        } else {
             return "z = " +
                     real +
                     " + " + imagine +
                     "i";
         }
     }
-
 }
+

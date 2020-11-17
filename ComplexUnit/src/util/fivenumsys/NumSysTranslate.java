@@ -1,4 +1,4 @@
-package models.fivenumsys;
+package util.fivenumsys;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

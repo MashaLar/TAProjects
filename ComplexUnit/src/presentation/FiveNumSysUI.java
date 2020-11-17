@@ -1,6 +1,6 @@
 package presentation;
 
-import models.fivenumsys.NumSysTranslate;
+import util.fivenumsys.NumSysTranslate;
 
 import java.util.Scanner;
 
@@ -9,8 +9,8 @@ public class FiveNumSysUI {
 
     private Scanner in = new Scanner(System.in);
 
-    //constructor for work with 5 num system
-    public FiveNumSysUI() {
+    //menu for work with 5 num system
+    public void Menu() {
         boolean menuContinue = true; // Variable for cycle to repeat menu
         do {
         System.out.println("\n----Number System Menu----" +

@@ -1,6 +1,6 @@
-package models.equation;
+package util.equation;
 
-import models.complex.ComplexNumber;
+import models.ComplexNumber;
 
 public class Square {
     // Class for finding solutions of square equation
