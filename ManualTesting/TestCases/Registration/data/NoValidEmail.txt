@@ -1,0 +1,27 @@
+1.
+firstName: Maria
+lastName: Larykova
+email: 
+phone: 0504216666
+password: 1234567
+confirmP: 1234567
+sub: no
+
+2.
+firstName: Hello
+lastName: World
+email: уап@mail.ru
+phone: 2222
+password: 11111
+confirmP: 11111
+sub: yes
+
+3.
+firstName: Р
+lastName: Р
+email: a@a.a
+phone: 123
+password: 0000
+confirmP: 0000
+sub: no
+
